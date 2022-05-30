@@ -34,6 +34,7 @@ router.get("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
+
 router.post("/login", (req, res) => {
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
   User.findOne({
